@@ -14,6 +14,7 @@ IMAGE_INSTALL += " \
 	dropbear \
 	kernel-modules \
 	razor-imu-9dof \
+	geometry-msgs \
 	roslaunch \
 	rosserial-arduino \
 	rosserial-client \
@@ -21,11 +22,14 @@ IMAGE_INSTALL += " \
 	rosserial-msgs \
 	rosserial-python \
 	rgbd-launch \
-	iw \
+	wireless-tools \
 	linux-firmware-brcm43430 \
- 	wireless-tools \
- 	wpa-supplicant \
+	linux-firmware-rtl8192ce \
+	linux-firmware-rtl8192cu \
+	linux-firmware-rtl8192su \
 	wiringpi \
  	rpio \
- 	rpi-gpio"
+ 	rpi-gpio \
+	usbutils \
+	packagegroup-ros-comm"
 
