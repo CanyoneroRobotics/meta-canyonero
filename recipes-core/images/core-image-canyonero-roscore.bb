@@ -8,28 +8,33 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_ROOTFS_SIZE = "8192"
+IMAGE_ROOTFS_SIZE = "1000000"
 
 IMAGE_INSTALL += " \
+	bash \
 	dropbear \
-	kernel-modules \
-	razor-imu-9dof \
+	freenect-camera \
+	freenect-launch \
 	geometry-msgs \
+	kernel-modules \
+	libserial \
+	linux-firmware-brcm43430 \
+	linux-firmware-rtl8192ce \
+	linux-firmware-rtl8192cu \
+	linux-firmware-rtl8192su \
+	packagegroup-ros-comm \
+	razor-imu-9dof \
 	roslaunch \
 	rosserial-arduino \
 	rosserial-client \
 	rosserial-embeddedlinux \
 	rosserial-msgs \
 	rosserial-python \
-	rgbd-launch \
-	wireless-tools \
-	linux-firmware-brcm43430 \
-	linux-firmware-rtl8192ce \
-	linux-firmware-rtl8192cu \
-	linux-firmware-rtl8192su \
-	wiringpi \
- 	rpio \
- 	rpi-gpio \
+	screen \
 	usbutils \
-	packagegroup-ros-comm"
-
+	vim \
+	wireless-tools \
+	wiringpi \
+	wpa-supplicant \
+ 	rpi-gpio \
+ 	rpio"
