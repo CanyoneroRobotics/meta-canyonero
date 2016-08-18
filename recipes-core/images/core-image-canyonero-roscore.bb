@@ -8,7 +8,7 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_ROOTFS_SIZE = "1000000"
+IMAGE_ROOTFS_SIZE = "1024000"
 
 IMAGE_INSTALL += " \
 	bash \
