@@ -8,17 +8,20 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_ROOTFS_SIZE = "1024000"
+IMAGE_ROOTFS_SIZE = "512000"
 
 IMAGE_INSTALL += " \
 	bash \
+	crda \
 	dropbear \
 	freenect-camera \
 	freenect-launch \
 	geometry-msgs \
+	iw \
 	kernel-modules \
 	libserial \
 	linux-firmware-brcm43430 \
+	linux-firmware-ralink \
 	linux-firmware-rtl8192ce \
 	linux-firmware-rtl8192cu \
 	linux-firmware-rtl8192su \
@@ -30,11 +33,14 @@ IMAGE_INSTALL += " \
 	rosserial-embeddedlinux \
 	rosserial-msgs \
 	rosserial-python \
+	rpi-gpio \
+	rpio \
 	screen \
+	TFM \
 	usbutils \
 	vim \
 	wireless-tools \
+	wireless-tools \
 	wiringpi \
 	wpa-supplicant \
- 	rpi-gpio \
- 	rpio"
+	wpa-supplicant"
