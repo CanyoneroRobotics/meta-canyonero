@@ -36,7 +36,9 @@ IMAGE_INSTALL += " \
 	rpi-gpio \
 	rpio \
 	screen \
-	TFM \
+	canyonero-base \
+	canyonero-control \
+	canyonero-robot \
 	usbutils \
 	vim \
 	wireless-tools \
