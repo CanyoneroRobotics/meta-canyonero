@@ -6,6 +6,16 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/LICENSE;md5=4d92cd373abda3937c2bc47fbc49d
 
 RDEPENDS_${PN} = "controller-interface libserial roslaunch roscpp rospy \
             tf std-msgs sensor-msgs controller-manager controller-manager-msgs hardware-interface roslint \
-            teleop-twist-joy twist-mux joy"
+            teleop-twist-joy teleop-twist-keyboard twist-mux joy \
+            diff-drive-controller \
+            effort-controllers \
+            force-torque-sensor-controller \
+            forward-command-controller \
+            gripper-action-controller \
+            imu-sensor-controller \
+            joint-state-controller \
+            joint-trajectory-controller \
+            position-controllers \
+            velocity-controllers"
 
 require TFM.inc
