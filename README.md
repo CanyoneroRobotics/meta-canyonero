@@ -45,6 +45,7 @@ BBLAYERS ?= " \
   /your/working/path/poky/meta-ros \
   /your/working/path/poky/meta-canyonero \
   /your/working/path/poky/meta-maker \
+  /your/working/path/poky/oe-core/meta-networking \
   /your/working/path/poky/oe-core/meta-oe \
   /your/working/path/poky/oe-core/meta-perl \
   /your/working/path/poky/oe-core/meta-python \
@@ -60,7 +61,7 @@ BBLAYERS_NON_REMOVABLE ?= " \
 Build Configuration:
 BB_VERSION        = "1.28.0"
 BUILD_SYS         = "x86_64-linux"
-NATIVELSBSTRING   = "Ubuntu-16.04"
+NATIVELSBSTRING   = "Ubuntu-14.04"
 TARGET_SYS        = "arm-poky-linux-gnueabi"
 MACHINE           = "raspberrypi3"
 DISTRO            = "poky"
@@ -69,12 +70,13 @@ TUNE_FEATURES     = "arm armv7a vfp thumb neon callconvention-hard vfpv4 cortexa
 TARGET_FPU        = "vfp-vfpv4-neon"
 meta              
 meta-yocto        
-meta-yocto-bsp    = "jethro:ddbc13155f4db5d98976dc93b586c0be4fc740d1"
-meta-raspberrypi  = "master:69840c0bbe03c2e61601e2377c8e2adc264e0478"
-meta-ros          = "master:d8a349fb2a7ed5f5d77cb6cebdb6bf534851cce9"
-meta-canyonero    = "master:b1860892f5d65891db24d933af9feeb4143eef03"
+meta-yocto-bsp    = "jethro:40376446904ae3529be41737fed9a0b650ed167d"
+meta-raspberrypi  = "master:2745399f75d7564fcc586d0365ff73be47849d0e"
+meta-ros          = "master:ebd3b9b1a442e23bf79afd2240b5f6ea883a60a8"
+meta-canyonero    = "master:43f175ad1729713f2a9835da9dc039604e929b4d"
 meta-maker        = "master:c039fafa7a0276769d0928d16bdacd2012f2aff6"
-meta-oe           
+meta-networking   
+meta-oe           
 meta-perl         
-meta-python       = "jethro:cb7e68f2a39fa6f24add48fc7b8d38fb7291bb44"
+meta-python       = "jethro:8ab04afbffb4bc5184cfe0655049de6f44269990"
 ```
