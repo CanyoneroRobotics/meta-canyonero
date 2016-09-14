@@ -25,6 +25,7 @@ IMAGE_INSTALL += " \
 	linux-firmware-rtl8192ce \
 	linux-firmware-rtl8192cu \
 	linux-firmware-rtl8192su \
+	ntp \
 	packagegroup-ros-comm \
 	razor-imu-9dof \
 	roslaunch \
@@ -37,6 +38,7 @@ IMAGE_INSTALL += " \
 	rpio \
 	screen \
 	canyonero-base \
+	canyonero-config-files \
 	canyonero-control \
 	canyonero-robot \
 	usbutils \
